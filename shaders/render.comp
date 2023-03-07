@@ -1,0 +1,26 @@
+#version 460
+
+layout(local_size_x = 1, local_size_y = 1) in;
+layout(binding = 0, rgba32f) uniform image2D color_map;
+
+void main()
+{
+  uint width, height;
+  width = gl_NumWorkGroups.x;
+  height = gl_NumWorkGroups.y;
+
+  uint x, y;
+  x = gl_WorkGroupSize.x * gl_WorkGroupID.x + gl_LocalInvocationID.x;
+  y = gl_WorkGroupSize.y * gl_WorkGroupID.y + gl_LocalInvocationID.y;
+
+  if(x <= width && y <= height)
+  {
+    float r = float(x) / float(width);
+    float g = float(y) / float(height);
+    float b = 0.25;
+
+    vec4 color = vec4(r, g, b, 1.0);
+    ivec2 position = ivec2(x, y);
+    imageStore(color_map, position, color);
+  }
+}

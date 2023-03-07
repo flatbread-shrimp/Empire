@@ -1,0 +1,11 @@
+{
+  "install-options": {
+    "base-path": "C:/Users/logan/OneDrive/Desktop",
+    "debug": true
+  },
+
+  "vulkan-sdk": {
+    "base-path": "C:/VulkanSDK/1.3.224.1",
+    "vulkan-name": "vulkan-1"
+  }
+}

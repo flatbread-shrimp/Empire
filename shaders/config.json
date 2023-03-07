@@ -1,0 +1,55 @@
+[
+  {
+    "name": "ui_vert.spv",
+    "source": [
+      "ui.vert"
+    ],
+    "flags": []
+  },
+  {
+    "name": "ui_frag.spv",
+    "source": [
+      "ui.frag"
+    ],
+    "flags": []
+  },
+
+  {
+    "name": "letter_vert.spv",
+    "source": [
+      "letter.vert"
+    ],
+    "flags": []
+  },
+
+  {
+    "name": "letter_frag.spv",
+    "source": [
+      "letter.frag"
+    ],
+    "flags": []
+  },
+
+  { 
+    "name": "quad_vert.spv", 
+    "source": [
+      "quad.vert"
+    ], 
+    "flags": [] 
+  },
+  { 
+    "name": "quad_frag.spv", 
+    "source": [
+      "quad.frag"
+    ], 
+    "flags": [] 
+  },
+
+  { 
+    "name": "render_comp.spv", 
+    "source": [
+      "render.comp"
+    ], 
+    "flags": [] 
+  }
+]
